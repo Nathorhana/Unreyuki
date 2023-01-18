@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>全屏地图</title>
+<link rel="stylesheet" href="https://cdn.w3cbus.com/library/mdui/1.0.2/css/mdui.min.css"/>
+</head>
+<body>
+
+</iframe>
+<iframe id="iframe"
+    name="iframe"
+    height="100%"
+    width="100%"
+    src="http://101.43.90.157:8100/"
+    scrolling="auto"
+    frameborder="0"
+    onload="changeFrameHeight()">
+</iframe>
+<script>
+    function changeFrameHeight() {
+        var iframe = document.getElementById("iframe");
+        iframe.height = document.documentElement.clientHeight;
+    }
+    window.onresize = function() {
+        changeFrameHeight();
+    }
+</script>
+<body class="mdui-bottom-nav-fixed">
+
+    <div class="mdui-bottom-nav mdui-color-pink">
+      <a href="http://www.xuanyo.net" class="mdui-ripple">
+        <i class="mdui-icon material-icons">home</i>
+        <label>返回主页</label>
+      </a>
+      <a href="" class="mdui-ripple">
+        <i class="mdui-icon material-icons">refresh</i>
+        <label>刷新(显示异常多刷新几次)</label>
+      </a>
+      <a href="http://101.43.90.157:8100/" class="mdui-ripple">
+        <i class="mdui-icon material-icons">open_in_new</i>
+        <label>严格链接</label>
+      </a>
+    </div>
+<script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+<script src="https://cdn.w3cbus.com/library/mdui/1.0.2/js/mdui.min.js"></script>
+</body>
+</html>
