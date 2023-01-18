@@ -3,8 +3,10 @@
 <head>
 <meta charset="utf-8">
 <title>全屏地图</title>
+<link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
 </head>
 <body>
+
 </iframe>
 <iframe id="iframe"
     name="iframe"
@@ -24,6 +26,23 @@
         changeFrameHeight();
     }
 </script>
+<body class="mdui-bottom-nav-fixed">
+
+    <div class="mdui-bottom-nav mdui-color-pink">
+      <a href="http://www.xuanyo.net" class="mdui-ripple">
+        <i class="mdui-icon material-icons">home</i>
+        <label>返回主页</label>
+      </a>
+      <a href="" class="mdui-ripple">
+        <i class="mdui-icon material-icons">refresh</i>
+        <label>刷新(显示异常多刷新几次)</label>
+      </a>
+      <a href="http://101.43.90.157:8100/" class="mdui-ripple">
+        <i class="mdui-icon material-icons">open_in_new</i>
+        <label>严格链接</label>
+      </a>
+    </div>
 <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+<script src="https://cdn.w3cbus.com/library/mdui/1.0.2/js/mdui.min.js"></script>
 </body>
 </html>
