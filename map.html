@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>全屏地图</title>
+</head>
+<body>
+</iframe>
+<iframe id="iframe"
+    name="iframe"
+    height="100%"
+    width="100%"
+    src="http://101.43.90.157:8100/"
+    scrolling="auto"
+    frameborder="0"
+    onload="changeFrameHeight()">
+</iframe>
+<script>
+    function changeFrameHeight() {
+        var iframe = document.getElementById("iframe");
+        iframe.height = document.documentElement.clientHeight;
+    }
+    window.onresize = function() {
+        changeFrameHeight();
+    }
+</script>
+<script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+</body>
+</html>
