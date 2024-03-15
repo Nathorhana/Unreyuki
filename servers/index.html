@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+    <meta name="renderer" content="webkit"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="css/mdui.css">
+    <script src="css/mdui.global.js"></script>
+    <title>Re:未觀測</title>
+  </head>
+  <body>
+    <div class="mdui-prose">
+      <div>
+        <mdui-navigation-rail contained>
+          <mdui-fab lowered icon="refresh--outlined" slot="top"></mdui-fab>
+          <mdui-button-icon icon="settings" slot="bottom"></mdui-button-icon>
+          <mdui-navigation-rail-item value="s1" icon="dns">社区1</mdui-navigation-rail-item>
+          <mdui-navigation-rail-item value="s2" icon="dns">社区2</mdui-navigation-rail-item>
+          <mdui-navigation-rail-item value="s3" icon="dns">社区3</mdui-navigation-rail-item>
+          <mdui-navigation-rail-item value="s4" icon="dns">社区4</mdui-navigation-rail-item>
+          <mdui-navigation-rail-item value="s5" icon="dns">社区5</mdui-navigation-rail-item>
+        </mdui-navigation-rail>
+        <mdui-top-app-bar style="position: relative;">
+          <mdui-top-app-bar-title>社区服务器浏览器</mdui-top-app-bar-title>
+        </mdui-top-app-bar>
+
+     
+        <div>
+          Working
+        </div>
+      </div>
+      <mdui-bottom-app-bar>
+        <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="dns" variant="tonal"></mdui-button-icon>
+          <div slot="headline">社区服务器浏览器</div>
+        </mdui-tooltip>
+        <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="home--outlined" href="https://xuanyo.net"></mdui-button-icon>
+          <div slot="headline">主页</div>
+        </mdui-tooltip>
+        <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="public--outlined" href="https://xuanyo.net/map"></mdui-button-icon>
+          <div slot="headline">地图库</div>
+        </mdui-tooltip>
+        <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="data_usage--outlined" href="https://cdn.xuanyo.net"></mdui-button-icon>
+          <div slot="headline">CDN</div>
+        </mdui-tooltip>
+        <div style="height: 80px;padding: 0 5px">
+        <mdui-divider vertical></mdui-divider>
+        </div>
+        <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="settings--outlined"></mdui-button-icon>
+          <div slot="headline">设置</div>
+        </mdui-tooltip>
+        <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="report--outlined"></mdui-button-icon>
+          <div slot="headline">报告问题</div>
+        </mdui-tooltip>
+        <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="download--outlined"></mdui-button-icon>
+          <div slot="headline">下载客户端</div>
+        </mdui-tooltip>
+        <div style="flex-grow: 0.99"></div>
+        <mdui-chip href="https://beian.miit.gov.cn/" target="_blank">沪ICP备0000000号</mdui-chip>
+        <mdui-chip>Ver:b2403151801</mdui-chip>
+        <div style="flex-grow: 0.01"></div>
+        <mdui-tooltip variant="rich">
+          <mdui-fab icon="info"></mdui-fab>
+          <div slot="headline">关于</div>
+        </mdui-tooltip>
+      </mdui-bottom-app-bar>
+    </div>
+  </body>
+</html>
