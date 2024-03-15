@@ -9,27 +9,46 @@
     <link rel="stylesheet" href="css/mdui.css">
     <script src="css/mdui.global.js"></script>
     <title>未觀測服务器浏览器</title>
+    <style>
+      #minecraft {
+        height: 200px;
+        background-color: greenyellow;
+        background-image: linear-gradient(to bottom left, rgb(147, 215, 46) , rgb(202, 237, 184));
+      }
+      
+      </style>
   </head>
   <body>
     <div class="mdui-prose">
       <div>
-        <mdui-navigation-rail contained>
+        <mdui-navigation-rail value="favorite">
           <mdui-fab lowered icon="refresh--outlined" slot="top"></mdui-fab>
           <mdui-button-icon icon="settings" slot="bottom"></mdui-button-icon>
-          <mdui-navigation-rail-item value="s1" icon="dns">社区1</mdui-navigation-rail-item>
-          <mdui-navigation-rail-item value="s2" icon="dns">社区2</mdui-navigation-rail-item>
-          <mdui-navigation-rail-item value="s3" icon="dns">社区3</mdui-navigation-rail-item>
-          <mdui-navigation-rail-item value="s4" icon="dns">社区4</mdui-navigation-rail-item>
-          <mdui-navigation-rail-item value="s5" icon="dns">社区5</mdui-navigation-rail-item>
+          <mdui-navigation-rail-item value="favorite" icon="favorite">收藏</mdui-navigation-rail-item>
+          <mdui-navigation-rail-item value="cs2" icon="dns">CS2</mdui-navigation-rail-item>
+          <mdui-navigation-rail-item value="cs" icon="dns">CSS/GO</mdui-navigation-rail-item>
+          <mdui-navigation-rail-item value="other" icon="dns">其他</mdui-navigation-rail-item>
         </mdui-navigation-rail>
         <mdui-top-app-bar style="position: relative;">
-          <mdui-top-app-bar-title>社区服务器浏览器</mdui-top-app-bar-title>
+          <mdui-top-app-bar-title>社区服务器浏览器 Alpha</mdui-top-app-bar-title>
+          <mdui-tooltip variant="rich">
+          <mdui-switch unchecked-icon="notifications_off" checked-icon="notifications_active"></mdui-switch>
+          <div slot="headline"><b>换图通知推送</b><br>在设置里选择类型或者在地图旁点击<mdui-icon name="notification_add" style="font-size: 15px"></mdui-icon>后，更换地图时将会收到系统通知</div>
+          </mdui-tooltip>
+          <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="settings--outlined"></mdui-button-icon>
+          <div slot="headline">设置</div>
+          </mdui-tooltip>
         </mdui-top-app-bar>
-
-     
+        <mdui-divider></mdui-divider> <br>
         <div>
-          Working
+          
         </div>
+        <div><center>
+          <h3>没有收藏</h3><p>使用 <mdui-icon name="favorite" style="font-size: 15px"></mdui-icon> 来点亮收藏</p>
+        </center>
+        </div>
+
       </div>
       <mdui-bottom-app-bar>
         <mdui-tooltip variant="rich">
@@ -56,10 +75,6 @@
         <mdui-divider vertical></mdui-divider>
         </div>
         <mdui-tooltip variant="rich">
-          <mdui-button-icon icon="settings--outlined"></mdui-button-icon>
-          <div slot="headline">设置</div>
-        </mdui-tooltip>
-        <mdui-tooltip variant="rich">
           <mdui-button-icon icon="report--outlined"></mdui-button-icon>
           <div slot="headline">报告问题</div>
         </mdui-tooltip>
@@ -69,7 +84,7 @@
         </mdui-tooltip>
         <div style="flex-grow: 0.99"></div>
         <mdui-chip href="https://beian.miit.gov.cn/" target="_blank">沪ICP备0000000号</mdui-chip>
-        <mdui-chip>Ver:b2403151801</mdui-chip>
+        <mdui-chip>Ver:a2403160347</mdui-chip>
         <div style="flex-grow: 0.01"></div>
         <mdui-tooltip variant="rich">
           <mdui-fab icon="info"></mdui-fab>
