@@ -1,0 +1,25 @@
+<local:MyCard Title="公告" Margin="0,0,0,15" CanSwap="false" IsSwaped="false">
+	<StackPanel Margin="25,40,23,15">
+	<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontWeight="Bold"
+                    Text="关于登录" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="←因为Forge没有登陆插件又有人没正版所以需要使用皮肤站账号登陆" />
+					<TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="没有的话注册一个就好了" />
+                    <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" 
+                    Text="" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" 
+                    Text="-花澪墨音 2024/3/16" />
+	</StackPanel>
+</local:MyCard>
+
+
+<local:MyCard Title="更新日志 2024/3/16" Margin="0,0,0,15" CanSwap="True" IsSwaped="false">
+	<StackPanel Margin="25,40,23,15">
+		<local:MyHint Margin="0,8,0,2" IsWarn="False"
+                    Text="客户端无需更新" />
+        <TextBlock TextWrapping="Wrap" Margin="0,6,0,0"
+                    Text="开服" />
+	</StackPanel>
+</local:MyCard>
+
