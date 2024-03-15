@@ -1,3 +1,4 @@
+
 <local:MyCard Title="公告" Margin="0,0,0,15" CanSwap="false" IsSwaped="false">
 	<StackPanel Margin="25,40,23,15">
 	<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontWeight="Bold"
@@ -14,12 +15,19 @@
 </local:MyCard>
 
 
-<local:MyCard Title="更新日志 2024/3/16" Margin="0,0,0,15" CanSwap="True" IsSwaped="false">
+<local:MyCard Title="更新日志 2024/3/16" Margin="0,0,0,15" CanSwap="True" IsSwaped="true">
 	<StackPanel Margin="25,40,23,15">
 		<local:MyHint Margin="0,8,0,2" IsWarn="False"
                     Text="客户端无需更新" />
         <TextBlock TextWrapping="Wrap" Margin="0,6,0,0"
                     Text="开服" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="已知问题" Margin="0,0,0,15" CanSwap="True" IsSwaped="true">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,6,0,0"
+                    Text="-个人死亡不掉落不生效" />
 	</StackPanel>
 </local:MyCard>
 
