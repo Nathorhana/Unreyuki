@@ -1,62 +1,75 @@
-<html>
-<head>
-<meta charset="utf-8">
-<title>未觀測CDN-404</title>
-</head>
-<link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
-<link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3867469_zsemvu0csw8.css" />
-<link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4155572_nmqvlhmbp3k.css" />
-<body>
-  <body class="mdui-theme-primary-indigo mdui-theme-accent-pink">
-    <!-- 工具栏 -->
-    <div class="mdui-appbar mdui-appbar-fixed">
-      <div class="mdui-tab mdui-color-pink " mdui-tab>
-      <a href="#home" class="mdui-ripple mdui-ripple-white" mdui-tooltip="{content: '仪表盘'}"><i class="mdui-icon material-icons">dashboard</i></a>
-      <a href="#Reyukibot" class="mdui-ripple mdui-ripple-white" mdui-tooltip="{content: 'Re:yuki'}"><i class="mdui-icon material-icons">crop_5_4</i></a>
-      <a href="#mc" class="mdui-ripple mdui-ripple-white" mdui-tooltip="{content: 'Minecraft'}"disabled><i class="iconfont icon-minecraft"></i></a>
-      <a href="#csgo" class="mdui-ripple mdui-ripple-white" mdui-tooltip="{content: 'CSGO服务器'}"disabled><i class="iconfont icon-steam"></i></a>
-      <a href="#map" class="mdui-ripple mdui-ripple-white" mdui-tooltip="{content: '网页地图'}"disabled><i class="iconfont icon-map"></i></a>
-      <a href="#about" class="mdui-ripple mdui-ripple-white" mdui-tooltip="{content: '关于'}"disabled><i class="iconfont icon-info-circle-fill"></i></a>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+    <meta name="renderer" content="webkit"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="servers/css/mdui.css">
+    <script src="servers/css/mdui.global.js"></script>
+    <title>Error</title>
+  </head>
+  <body>
+    <div class="mdui-prose">
+
+     
+      <div id="home">
+        <br><br><br><h1 align="center">404</h1>
+          <p align="center">找不到页面</p><br>
+      <br><div class="mdui-col" align="center">  
+        <div class="mdui-container">
+                <div class="mdui-container">
+                    <div class="mdui-card">
+                      <div class="mdui-card-media">
+                      <div class="mdui-card-actions">
+                        <mdui-button icon="home" href='https://xuanyo.net'>主页</mdui-button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+      </div>
+      <mdui-bottom-app-bar>
+        <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="home--outlined" variant="tonal"></mdui-button-icon>
+          <div slot="headline">主页</div>
+        </mdui-tooltip>
+        <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="dns" href="https://xuanyo.net/servers/"></mdui-button-icon>
+          <div slot="headline">社区服务器浏览器</div>
+        </mdui-tooltip>
+        <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="public--outlined" href="https://xuanyo.net/map"></mdui-button-icon>
+          <div slot="headline">地图库</div>
+        </mdui-tooltip>
+        <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="data_usage--outlined" href="https://cdn.xuanyo.net"></mdui-button-icon>
+          <div slot="headline">CDN</div>
+        </mdui-tooltip>
+        <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="comment--outlined" href="https://reyuki.com"></mdui-button-icon>
+          <div slot="headline">Reyuki</div>
+        </mdui-tooltip>
+        <div style="height: 80px;padding: 0 5px">
+        <mdui-divider vertical></mdui-divider>
+        </div>
+        <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="report--outlined"></mdui-button-icon>
+          <div slot="headline">报告问题</div>
+        </mdui-tooltip>
+        <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="download--outlined"></mdui-button-icon>
+          <div slot="headline">下载客户端</div>
+        </mdui-tooltip>
+        <div style="flex-grow: 0.99"></div>
+        <mdui-chip href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">沪ICP备0000000号</mdui-chip>
+        <div style="flex-grow: 0.01"></div>
+        <mdui-tooltip variant="rich">
+          <mdui-fab icon="info"></mdui-fab>
+          <div slot="headline">关于</div>
+        </mdui-tooltip>
+      </mdui-bottom-app-bar>
     </div>
-  </div>
-</div>
-  <div class="mdui-container-fluid">
-</div>
-<!-- 仪表盘|主页... -->
-
-  <center><br><br><br><br><h1>404</h1>
-    <p>找不到页面</p>
-    <p>此文件可能已被删除，或者正在更新</p>
-<br><br>
-  <div class="mdui-col">  
-    <div class="mdui-container">
-      <div class="mdui-row-xs-3">
-        <div class="mdui-col">
-          <button class="mdui-btn mdui-btn-block mdui-color-pink mdui-ripple" onclick="window.location.href='https://cdn.xuanyo.net'" ">返回仪表盘</button>
-        </div>  
-        <div class="mdui-col">
-          <button class="mdui-btn mdui-btn-block mdui-color-purple mdui-ripple" onclick="window.location.href='https://reyuki.com'" ">Reyuki</button>
-        </div>  
-        <div class="mdui-col">
-          <button class="mdui-btn mdui-btn-block mdui-color-pink mdui-ripple" onclick="window.location.href='https://xuanyo.net'" ">返回未觀測</button>
-        </div>      
-        <br>
-        <br>
-      </div><br>   
-      </div> 
-    </div><br>   
-  </div>
-  </div>
-  <!-- 对话框... -->
-
-    </center>
-  <div class="mdui-dialog" id="unavailable"">
-    <div class="mdui-dialog-title">不可用</div>
-    <div class="mdui-dialog-content">目前不可用</div>
-  </div>
-</div>
-</div>
-<script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
-</div>
-</body>
+  </body>
 </html>
