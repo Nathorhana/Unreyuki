@@ -3,33 +3,6 @@
 <meta charset="utf-8">
 <title>未觀測</title>
 </head>
-<style>
-  a{
-  text-decoration: none;
-  color: black;
-  }
-  .background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  .blur {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://cdn.xuanyo.net/Reyuki/bg.jpg');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: blur(50%);
-    opacity: 0.5; 
-  }
-</style>
 <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
 <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4157282_zijl1kkgr3.css" />
 
@@ -40,8 +13,8 @@
     </div>
     <button class="mdui-fab mdui-fab-fixed" onclick="window.location.href='https://github.com/Nathorhana'" mdui-tooltip="{content: 'Github'}"><i class="iconfont icon-github"></i></button>
     <!-- 工具栏 -->
-  <div class="mdui-toolbar">
-    <a href="#" class="mdui-ripple mdui-ripple-white" mdui-tooltip="{content: '主页'}"><i class="mdui-icon material-icons">home</i></a>
+  <div class="mdui-toolbar mdui-color-pink">
+    <a href="#" class="mdui-ripple  mdui-ripple-white" mdui-tooltip="{content: '主页'}"><i class="mdui-icon material-icons">home</i></a>
   <span class="mdui-typo-title">未觀測</span>
   <div class="mdui-toolbar-spacer"></div>
   <a href="https://github.com/Nathorhana" class="mdui-ripple mdui-ripple-white" mdui-tooltip="{content: 'Github'}"></a>
@@ -53,220 +26,20 @@
 
 <!-- 仪表盘|主页... -->
 <div id="home">
-  <center><br><br><br><h1>未觀測</h1>
-    <p>欢迎来到花澪墨音的主页<br><br><b>那背后的故事..究竟是什么呢</b><br>
+  <br><br><br><h1 align="center">未觀測</h1>
+    <p align="center">Restarting..</p><br>
       <!-- 卡片长按钮... -->
-<br><div class="mdui-col">  
+<br><div class="mdui-col" align="center">  
   <div class="mdui-container">
           <div class="mdui-container">
               <div class="mdui-card">
                 <div class="mdui-card-media">
                 <div class="mdui-card-actions">
-                  <button class="mdui-btn mdui-ripple" onclick="window.location.href='https://reyuki.com'" mdui-tooltip="{content: '欢迎来到Reyuki'}"><i class="mdui-icon material-icons">data_usage</i> 觀測日志</button>
+                  <button class="mdui-btn mdui-ripple" onclick="window.location.href='https://reyuki.com'" mdui-tooltip="{content: '?'}"><i class="mdui-icon material-icons">data_usage</i> ..?</button>
                 </div>
             </div>
           </div>
         </div>
-        <br>
-        <!-- 按钮Line1 -->
-    <br><div class="mdui-row">
-      <div class="mdui-col-xs-6 mdui-col-sm-4">
-        <body class="mdui-theme-primary-indigo mdui-theme-accent-pink"></body>
-        <button class="mdui-btn mdui-hoverable mdui-btn-block mdui-color-grey-800" onclick="window.location.href='https://steamcommunity.com/id/Nathorhana/'" ><i class="iconfont icon-steam"></i> Steam</button>
-      </div>
-      <div class="mdui-col-xs-6 mdui-col-sm-4">
-        <button class="mdui-btn mdui-hoverable mdui-btn-block mdui-color-blue-600" onclick="window.location.href='https://twitter.com/Nathorhana'" ><i class="iconfont icon-twitter-fill"></i> Twitter</button>
-      </div>    
-      <div class="mdui-col-xs-6 mdui-col-sm-4">
-        <button class="mdui-btn mdui-hoverable mdui-btn-block mdui-color-pink" onclick="window.location.href='https://space.bilibili.com/38014259/'"><i class="iconfont icon-bilibili"></i> bilibili</button>
-      </div>   
-    </div>  
-      
-      <!-- 按钮Line2 -->
-      <br><div class="mdui-row">
-        <div class="mdui-col-xs-6 mdui-col-sm-4">
-          <body class="mdui-theme-primary-indigo mdui-theme-accent-pink"></body>
-          <button class="mdui-btn mdui-hoverable mdui-btn-block mdui-color-deep-purple" mdui-dialog="{target: '#discord'}" ><i class="iconfont icon-discord"></i> Discord</button>
-        </div>
-        <div class="mdui-col-xs-6 mdui-col-sm-4">
-          <button class="mdui-btn mdui-hoverable mdui-btn-block mdui-color-light-blue-800" mdui-dialog="{target: '#bnet'}"><i class="iconfont icon-battle-net"></i> Battle.Net</button>
-        </div>    
-        <div class="mdui-col-xs-6 mdui-col-sm-4">
-          <button class="mdui-btn mdui-hoverable mdui-btn-block mdui-color-black" mdui-dialog="{target: '#epic'}"><i class="iconfont icon-epicgames"></i> Epic Games</button>
-        </div>  
-      </div> 
-     
-      <!-- 按钮Line3 -->
-      <br><div class="mdui-row">
-        <div class="mdui-col-xs-6 mdui-col-sm-4">
-          <body class="mdui-theme-primary-indigo mdui-theme-accent-pink"></body>
-          <button class="mdui-btn mdui-hoverable mdui-btn-block mdui-color-green-600" onclick="window.location.href='https://account.xbox.com/profile?gamertag=Nathorhana'" ><i class="iconfont icon-xbox"></i> Xbox Live</button><br>
-        </div>
-        <div class="mdui-col-xs-6 mdui-col-sm-4">
-          <button class="mdui-btn mdui-hoverable mdui-btn-block mdui-color-red-600" mdui-dialog="{target: '#xiv'}"> 最终幻想XIV</button>
-        </div>  
-        <div class="mdui-col-xs-6 mdui-col-sm-4">
-          <button class="mdui-btn mdui-hoverable mdui-btn-block mdui-color-indigo-800" mdui-dialog="{target: '#psn'}"" ><i class="iconfont icon-playstation"></i> PlayStation Network</button>
-        </div>  
-      </div> 
-     
-      <br>
-<!-- 卡片布局开始... -->
-  <div class="mdui-container">
-    <div class="mdui-col-xs-12">
-
-      <!-- 卡片1... -->
-      <div class="mdui-col-sm-6 mdui-col-md-4 ">
-        <div class="mdui-card">
-          <div class="mdui-card-media">
-            <img src="https://cdn.xuanyo.net/Reyuki/mcs.png"/>
-            <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
-              <div class="mdui-card-primary">
-                <div class="mdui-card-primary-title">我的世界服务器</div>
-                <div class="mdui-card-primary-subtitle">未觀測组服</div>
-              </div>
-              <div class="mdui-card-actions">
-                <button class="mdui-btn mdui-ripple" ><i class="mdui-icon material-icons">arrow_drop_down</i> 离线中</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>  
-
-      <!-- 卡片2... -->
-      <div class="mdui-col-sm-6 mdui-col-md-4 ">
-        <div class="mdui-card">
-          <div class="mdui-card-media ">
-            <img src="https://cdn.xuanyo.net/Reyuki/bg.jpg"/>
-            <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
-              <div class="mdui-card-primary">
-                <div class="mdui-card-primary-title">背景</div>
-                <div class="mdui-card-primary-subtitle">Reyuki和未觀測的背景和历史背景出处</div>
-              </div>
-              <div class="mdui-card-actions">
-                <button class="mdui-btn mdui-ripple" onclick="window.location.href='https://cdn.xuanyo.net/bg.html'" ><i class="mdui-icon material-icons">open_in_new</i> 查看</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 卡片3... -->
-      <div class="mdui-col-sm-6 mdui-col-md-4 ">
-        <div class="mdui-card">
-          <div class="mdui-card-media">
-            <img src="https://cdn.xuanyo.net/Reyuki/csgos.jpg"/>
-            <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
-              <div class="mdui-card-primary">
-                <div class="mdui-card-primary-title">CSGO服务器</div>
-                <div class="mdui-card-primary-subtitle">ZE跑图</div>
-              </div>
-              <div class="mdui-card-actions">
-                <button class="mdui-btn mdui-ripple" ><i class="mdui-icon material-icons">arrow_drop_down</i> 小团体化</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-<!-- 卡片布局结束... -->
-    </div>
-  </div>
-
-<div class="mdui-container">
-  <div class="mdui-row">
-    <div class="mdui-col-sm-6 mdui-col-md-4">
-      
-  </div>
-</div>
-<!-- Re:yuki... -->
-  <!-- 对话框Discord... -->
-<div class="mdui-dialog" id="discord">
-  <div class="mdui-dialog-title">Discord用户名</div>
-  <div class="mdui-dialog-content">
-    <div class="mdui-chip">
-    <span class="mdui-chip-icon mdui-color-deep-purple">
-      <i class="iconfont icon-discord "></i>
-    </span>
-    <span class="mdui-chip-title">nathorhana</span>
-  </div>
-  </div>
-  <div class="mdui-dialog-actions">
-    <button class="mdui-btn mdui-ripple"mdui-dialog-close>完成</button>
-  </div>
-</div>
-</div>
-  <!-- 对话框ff14... -->
-  <div class="mdui-dialog" id="xiv">
-    <div class="mdui-dialog-title">最终幻想XIV</div>
-    <div class="mdui-dialog-content">
-      <div class="mdui-chip">
-      <span class="mdui-chip-title" mdui-tooltip="{content: '国服-陆行鸟'}">花澪墨音@宇宙和音</span>
-    </div>
-    </div>
-    <div class="mdui-dialog-actions">
-      <button class="mdui-btn mdui-ripple"mdui-dialog-close>完成</button>
-    </div>
-  </div>
-  </div>
-  <!-- 对话框Bnet... -->
-  <div class="mdui-dialog" id="bnet">
-    <div class="mdui-dialog-title">战网</div>
-    <div class="mdui-dialog-content">
-      <div class="mdui-chip">
-      <span class="mdui-chip-icon mdui-color-blue">
-        <i class="iconfont icon-battle-net"></i>
-      </span>
-      <span class="mdui-chip-title" mdui-tooltip="{content: '守望先锋|黑色行动4|黑色行动冷战'}">Nathorhana#1715</span>
-    </div>
-    <div class="mdui-chip">
-      <span class="mdui-chip-icon mdui-color-blue">
-        <i class="iconfont icon-battle-net"></i>
-      </span>
-      <span class="mdui-chip-title" mdui-tooltip="{content: '先锋|现代战争II|战争地带'}">Akino#11904</span>
-    </div>
-    <div class="mdui-dialog-actions">
-      <button class="mdui-btn mdui-ripple"mdui-dialog-close>完成</button>
-    </div>
-  </div>
-</div>
-  <!-- 对话框Epic... -->
-  <div class="mdui-dialog" id="epic">
-    <div class="mdui-dialog-title">EPIC Games</div>
-    <div class="mdui-dialog-content">
-      <div class="mdui-chip">
-      <span class="mdui-chip-icon mdui-color-black">
-        <i class="iconfont icon-epicgames "></i>
-      </span>
-      <span class="mdui-chip-title">堡垒之夜第一小学生</span>
-    </div>
-    </div>
-    <div class="mdui-dialog-actions">
-      <button class="mdui-btn mdui-ripple"mdui-dialog-close>完成</button>
-    </div>
-  </div>
-</div>
-  <!-- 对话框PS... -->
-  <div class="mdui-dialog" id="psn">
-    <div class="mdui-dialog-title">PlayStation Network</div>
-    <div class="mdui-dialog-content">
-      <div class="mdui-chip">
-      <span class="mdui-chip-icon mdui-color-indigo">
-        <i class="iconfont icon-playstation"></i>
-      </span>
-      <span class="mdui-chip-title" mdui-tooltip="{content: '主账号'}">NathorhanaOVO</span>
-    </div>
-    <div class="mdui-chip">
-      <span class="mdui-chip-icon mdui-color-indigo">
-        <i class="iconfont icon-playstation"></i>
-      </span>
-      <span class="mdui-chip-title" mdui-tooltip="{content: 'NGS/高达进化/FFXIV'}">AoraKoishi</span>
-    </div>
-    <div class="mdui-dialog-actions">
-      <button class="mdui-btn mdui-ripple"mdui-dialog-close>完成</button>
-    </div>
-  </div>
-</div>
 
 
   </div>
