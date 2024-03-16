@@ -27,7 +27,7 @@
 <local:MyCard Title="已知问题" Margin="0,0,0,15" CanSwap="True" IsSwaped="true">
 	<StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="0,6,0,0"
-                    Text="-个人死亡不掉落不生效" />
+                    Text="-非英文ID可能会出现mod无法保存" />
 	</StackPanel>
 </local:MyCard>
 
