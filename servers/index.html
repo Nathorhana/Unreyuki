@@ -6,21 +6,39 @@
     <meta name="renderer" content="webkit"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="css/mdui.css">
     <script src="css/mdui.global.js"></script>
     <title>未觀測服务器浏览器</title>
+    <script type="text/javascript">
+			var jq = jQuery;
+			$.ajax({
+                type:'get',
+                url:"https://api.miri.site/mcPlayer/get.php?ip=mc.xuanyo.net&port=25565",
+                success:function(body,heads,status){
+                    var online = body.online;
+                    $("#online").text(online + "/20");         
+                }
+            })
+		</script>
     <style>
       #minecraft {
         height: 200px;
         background-color: greenyellow;
-        background-image: linear-gradient(to bottom left, rgb(147, 215, 46) , rgb(202, 237, 184));
+        background-image: linear-gradient(to bottom right, rgb(221, 228, 210) ,rgb(166, 233, 132));
       }
-      
+      #Preview {
+        height: 200px;
+        background-color: rgb(255, 152, 152);
+        background-image: linear-gradient(to bottom right, rgb(255, 228, 228) ,rgb(255, 153, 153));
+      }
+    
       </style>
   </head>
   <body>
     <div class="mdui-prose">
       <div>
+        
         <mdui-navigation-rail value="favorite">
           <mdui-fab lowered icon="refresh--outlined" slot="top"></mdui-fab>
           <mdui-button-icon icon="settings" slot="bottom"></mdui-button-icon>
@@ -30,10 +48,10 @@
           <mdui-navigation-rail-item value="other" icon="dns">其他</mdui-navigation-rail-item>
         </mdui-navigation-rail>
         <mdui-top-app-bar style="position: relative;">
-          <mdui-top-app-bar-title>社区服务器浏览器 Alpha</mdui-top-app-bar-title>
+          <mdui-top-app-bar-title>社区服务器浏览器 Preview</mdui-top-app-bar-title>
           <mdui-tooltip variant="rich">
           <mdui-switch unchecked-icon="notifications_off" checked-icon="notifications_active"></mdui-switch>
-          <div slot="headline"><b>换图通知推送</b><br>在设置里选择类型或者在地图旁点击<mdui-icon name="notification_add" style="font-size: 15px"></mdui-icon>后，更换地图时将会收到系统通知</div>
+          <div slot="headline"><b>换图通知推送(CS系列)</b><br>在设置里选择类型或者在地图旁点击<mdui-icon name="notification_add" style="font-size: 15px"></mdui-icon>后，更换地图时将会收到系统通知</div>
           </mdui-tooltip>
           <mdui-tooltip variant="rich">
           <mdui-button-icon icon="settings--outlined"></mdui-button-icon>
@@ -44,10 +62,29 @@
         <div>
           
         </div>
-        <div><center>
-          <h3>没有收藏</h3><p>使用 <mdui-icon name="favorite" style="font-size: 15px"></mdui-icon> 来点亮收藏</p>
-        </center>
-        </div>
+       
+        
+        <div class="mctab" style="position: relative; overflow: hidden">
+          <mdui-navigation-drawer modal close-on-esc close-on-overlay-click>
+            <center>
+            <br><h3>加入服务器</h3><h4>No Flesh Within Chest</h4><mdui-badge>Minecraft</mdui-badge><br><br><mdui-chip>当前在线:<span id="online">获取中</span></mdui-chip>
+            <br><br><mdui-button icon="open_in_new" href='https://xuanyo.net/minecraft'>启动游戏</mdui-button>
+          </center>
+          </mdui-navigation-drawer>
+        
+          <div><center>
+            <h3>没有收藏</h3><p>使用 <mdui-icon name="favorite" style="font-size: 15px"></mdui-icon> 来点亮收藏</p><br>
+            <mdui-card id="minecraft" class="openmc" clickable style="width: 600px;height: 50px"></mdui-icon> <p style="margin-top:10px;"><mdui-icon name="open_in_new" style="font-size: 13px"></mdui-icon> No Flesh within chest <b>在线</b></p></mdui-card>
+          </center>
+          </div><br>
+        <script>
+          const mctab = document.querySelector(".mctab");
+          const navigationDrawer = mctab.querySelector("mdui-navigation-drawer");
+          const openButton = mctab.querySelector(".openmc");
+        
+          openButton.addEventListener("click", () => navigationDrawer.open = true);
+          closeButton.addEventListener("click", () => navigationDrawer.open = false);
+        </script>
 
       </div>
       <mdui-bottom-app-bar>
@@ -84,13 +121,17 @@
         </mdui-tooltip>
         <div style="flex-grow: 0.99"></div>
         <mdui-chip href="https://beian.miit.gov.cn/" target="_blank">沪ICP备0000000号</mdui-chip>
-        <mdui-chip>Ver:a2403160347</mdui-chip>
+        <mdui-chip>Preview | 不具备大部分功能</mdui-chip>
         <div style="flex-grow: 0.01"></div>
         <mdui-tooltip variant="rich">
           <mdui-fab icon="info"></mdui-fab>
-          <div slot="headline">关于</div>
+          <div slot="headline"><b>关于</b><p>构建:P2403160903</p></div>
         </mdui-tooltip>
       </mdui-bottom-app-bar>
+
+
+      
+
     </div>
   </body>
 </html>
