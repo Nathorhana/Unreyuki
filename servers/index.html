@@ -2,6 +2,7 @@
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8">
+    <meta name=”robots” content=”noarchive”>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
     <meta name="renderer" content="webkit"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -53,10 +54,6 @@
           <mdui-switch unchecked-icon="notifications_off" checked-icon="notifications_active"></mdui-switch>
           <div slot="headline"><b>换图通知推送(CS系列)</b><br>在设置里选择类型或者在地图旁点击<mdui-icon name="notification_add" style="font-size: 15px"></mdui-icon>后，更换地图时将会收到系统通知</div>
           </mdui-tooltip>
-          <mdui-tooltip variant="rich">
-          <mdui-button-icon icon="settings--outlined"></mdui-button-icon>
-          <div slot="headline">设置</div>
-          </mdui-tooltip>
         </mdui-top-app-bar>
         <mdui-divider></mdui-divider> <br>
         <div>
@@ -89,44 +86,33 @@
       </div>
       <mdui-bottom-app-bar>
         <mdui-tooltip variant="rich">
-          <mdui-button-icon icon="dns" variant="tonal"></mdui-button-icon>
-          <div slot="headline">社区服务器浏览器</div>
+          <mdui-button-icon icon="dns--outlined" variant="tonal"></mdui-button-icon>
+          <div slot="headline"><h4>服务器浏览器</h4>浏览CS/MC的社区服务器，并获取换图通知</div>
         </mdui-tooltip>
         <mdui-tooltip variant="rich">
           <mdui-button-icon icon="home--outlined" href="https://xuanyo.net"></mdui-button-icon>
-          <div slot="headline">主页</div>
+          <div slot="headline"><h4>未觀測</h4>主页</div>
         </mdui-tooltip>
         <mdui-tooltip variant="rich">
-          <mdui-button-icon icon="public--outlined" href="https://xuanyo.net/map"></mdui-button-icon>
-          <div slot="headline">地图库</div>
+          <mdui-button-icon icon="spa--outlined" href="https://xuanyo.net/hana/" ></mdui-button-icon>
+          <div slot="headline"><h4>花</h4>来自未觀測新世界的附属站</div>
         </mdui-tooltip>
         <mdui-tooltip variant="rich">
-          <mdui-button-icon icon="data_usage--outlined" href="https://cdn.xuanyo.net"></mdui-button-icon>
-          <div slot="headline">CDN</div>
+          <mdui-button-icon icon="archive--outlined"></mdui-button-icon>
+          <div slot="headline"><h4>归档</h4>目前不可用</div>
         </mdui-tooltip>
-        <mdui-tooltip variant="rich">
-          <mdui-button-icon icon="comment--outlined" href="https://reyuki.com"></mdui-button-icon>
-          <div slot="headline">Reyuki</div>
-        </mdui-tooltip>
-        <div style="height: 80px;padding: 0 5px">
-        <mdui-divider vertical></mdui-divider>
-        </div>
-        <mdui-tooltip variant="rich">
-          <mdui-button-icon icon="report--outlined"></mdui-button-icon>
-          <div slot="headline">报告问题</div>
-        </mdui-tooltip>
-        <mdui-tooltip variant="rich">
-          <mdui-button-icon icon="download--outlined"></mdui-button-icon>
-          <div slot="headline">下载客户端</div>
-        </mdui-tooltip>
-        <div style="flex-grow: 0.99"></div>
-        <mdui-chip href="https://beian.miit.gov.cn/" target="_blank">沪ICP备0000000号</mdui-chip>
-        <mdui-chip>Preview | 不具备大部分功能</mdui-chip>
-        <div style="flex-grow: 0.01"></div>
-        <mdui-tooltip variant="rich">
-          <mdui-fab icon="info"></mdui-fab>
-          <div slot="headline"><b>关于</b><p>构建:P2403160903</p></div>
-        </mdui-tooltip>
+          <mdui-tooltip variant="rich">
+            <mdui-button-icon icon="settings--outlined"></mdui-button-icon>
+            <div slot="headline"><h4>设置</h4>目前不可用</div>
+          </mdui-tooltip>
+          <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="info--outlined"></mdui-button-icon>
+          <div slot="headline"><h4>关于</h4>位置:未觀測-服务器浏览器<br>构建:SBR-GL24T03210720P<br>国际区域</div>
+          <div style="flex-grow: 0.99"></div>
+          <mdui-tooltip placement="left" variant="rich">
+          <mdui-button-icon icon="public--outlined" href="https://meteorsnow.cn"></mdui-button-icon>
+          <div slot="headline"></mdui-icon>当前位于国际区域<br>点击切换到简体中文区域的主页<br>(服务器浏览器在简体中文区域不可用)</div>
+         </mdui-tooltip>
       </mdui-bottom-app-bar>
 
 
