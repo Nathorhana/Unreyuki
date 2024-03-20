@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name=”robots” content=”noarchive”>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+    <meta name="renderer" content="webkit"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/mdui.css">
+    <script src="js/mdui.global.js"></script>
+    <title>未觀測-花</title>
+  </head>
+  <style>
+    #minecraft
+    {
+      background-image:url('maps/mc.jpg');
+      background-size:100% 100%;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+      color: aliceblue;
+    }
+    #aoraitsu
+    {
+      background-image:url('maps/aoraitsu.jpg');
+      background-size:100% 100%;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+      color: aliceblue;
+    }
+    #rein
+    {
+      background-image:url('maps/rein.jpg');
+      background-size:100% 100%;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+      color: black;
+    }
+    #text-center
+    {
+      text-align: center;
+    }
+    </style>
+  <body>
+    <div class="mdui-prose">
+      <div>
+        <mdui-navigation-rail value="all">
+          <mdui-fab lowered icon="spa--outlined" slot="top"></mdui-fab>
+          <mdui-button-icon icon="settings" slot="bottom"></mdui-button-icon>
+          <mdui-navigation-rail-item value="all" icon="menu">全部</mdui-navigation-rail-item>
+        </mdui-navigation-rail>
+        <mdui-top-app-bar style="position: relative;">
+          <mdui-top-app-bar-title>项目</mdui-top-app-bar-title>
+        </mdui-top-app-bar>
+        <mdui-divider></mdui-divider> <br>
+
+    <div id="all">
+     <div class="mdui-container">
+
+      <div class="mc-modal" style="position: relative; overflow: hidden">
+        <mdui-navigation-drawer modal close-on-esc close-on-overlay-click>
+          <br><div id="text-center"><p><h2>Minecraft服务器</h2>当前正在运行:脆骨症0.21<br><br><mdui-chip>服务器</mdui-chip><br><mdui-chip>当前在线:<span id="online">获取中(或离线)</span></mdui-chip></p>
+          <mdui-button icon="do_disturb" disabled>联系管理员进入</mdui-button></div>
+        </mdui-navigation-drawer>
+
+        <div class="aoraitsu-modal" style="position: relative; overflow: hidden">
+          <mdui-navigation-drawer modal close-on-esc close-on-overlay-click>
+            <br><div id="text-center"><p><h2>流光幻境</h2>Aoraitsu | 2023.10.24<br>来自CSGO末期的三关弹幕僵尸逃跑地图<br><br><mdui-chip>反恐精英:全球攻势项目</mdui-chip><br><mdui-chip>最新版本r6f:f3b1 2023.11.28</mdui-chip><br><mdui-chip>遗产项目(不再更新)</mdui-chip><br></p>
+            <mdui-button icon="download" href='https://cdn.meteorsnow.cn/maps/ze_aoraitsu_r6f.bsp.bz'>通过未觀測CDN下载</mdui-button>
+            <mdui-button icon="open_in_new" href='https://gamebanana.com/mods/475582' target="_blank">在Gamebanana查看</mdui-button></div>
+          </mdui-navigation-drawer>
+
+          <div class="rein-modal" style="position: relative; overflow: hidden">
+            <mdui-navigation-drawer modal close-on-esc close-on-overlay-click>
+              <br><div id="text-center"><p><h2>輪廻</h2>Reincarnation | 2024<br>这是新的开始，即将到来。<br><br><mdui-chip>反恐精英2项目</mdui-chip><br><mdui-chip>已立项</mdui-chip><br><br>进度:<br><mdui-linear-progress style="width: 200px;" value="0.1"></mdui-linear-progress></p>
+              <mdui-button icon="open_in_new" disabled>在Steam创意工坊查看</mdui-button></div>
+            </mdui-navigation-drawer>
+
+          <span>
+            <mdui-card class="mc-open" clickable id="minecraft" variant="filled" style="width: 380px;height: 200px">
+            <h2 style="font-weight: 600;">Minecraft</h2>服务器
+            </mdui-card>
+          </span>
+
+          <span>
+           <mdui-card class="aoraitsu-open" clickable id="aoraitsu" variant="filled" style="width: 380px;height: 200px">
+           <h2 style="font-weight: 600;">流光幻境</h2>Aoraitsu
+          </mdui-card>
+        </span>
+        
+        <span>
+          <mdui-card class="rein-open" clickable id="rein" variant="filled" style="width: 380px;height: 200px">
+          <h2 style="font-weight: 600;">輪廻</h2>Reincarnation
+         </mdui-card>
+       </span>
+        </div>
+      </div>
+    </div>
+
+
+
+      <script>
+        const mc = document.querySelector(".mc-modal");
+        const mcDrawer = mc.querySelector("mdui-navigation-drawer");
+        const mcopenButton = mc.querySelector(".mc-open");
+        mcopenButton.addEventListener("click", () => mcDrawer.open = true);
+
+        const aoraitsu = document.querySelector(".aoraitsu-modal");
+        const aoraitsuDrawer = aoraitsu.querySelector("mdui-navigation-drawer");
+        const aoraitsuopenButton = aoraitsu.querySelector(".aoraitsu-open");
+        aoraitsuopenButton.addEventListener("click", () => aoraitsuDrawer.open = true);
+
+        const rein = document.querySelector(".rein-modal");
+        const reinDrawer = rein.querySelector("mdui-navigation-drawer");
+        const reinopenButton = rein.querySelector(".rein-open");
+        reinopenButton.addEventListener("click", () => reinDrawer.open = true);
+        var jq = jQuery;
+			  $.ajax({
+                type:'get',
+                url:"https://api.miri.site/mcPlayer/get.php?ip=mc.xuanyo.net&port=25565",
+                success:function(body,heads,status){
+                    var online = body.online;
+                    $("#online").text(online);         
+                }
+            })
+      </script>
+
+      <mdui-bottom-app-bar>
+        <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="spa--outlined" variant="tonal" ></mdui-button-icon>
+          <div slot="headline"><h4>花</h4>来自未觀測新世界的附属站</div>
+        </mdui-tooltip>
+        <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="home--outlined" href="https://xuanyo.net" ></mdui-button-icon>
+          <div slot="headline"><h4>未觀測</h4>主页</div>
+        </mdui-tooltip>
+        <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="dns--outlined" href="https://xuanyo.net/servers/"></mdui-button-icon>
+          <div slot="headline"><h4>服务器浏览器</h4>浏览CS/MC的社区服务器，并获取换图通知</div>
+        </mdui-tooltip>
+        <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="archive--outlined"></mdui-button-icon>
+          <div slot="headline"><h4>归档</h4>目前不可用</div>
+        </mdui-tooltip>
+          <mdui-tooltip variant="rich">
+            <mdui-button-icon icon="settings--outlined"></mdui-button-icon>
+            <div slot="headline"><h4>设置</h4>目前不可用</div>
+          </mdui-tooltip>
+          <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="info--outlined"></mdui-button-icon>
+          <div slot="headline"><h4>关于</h4>位置:未觀測-花<br>构建:Hana-GL24T03210740R<br>国际区域</div>
+          <div style="flex-grow: 0.99"></div>
+          <mdui-tooltip placement="left" variant="rich">
+          <mdui-button-icon icon="public--outlined" href="https://hana.meteorsnow.cn"></mdui-button-icon>
+          <div slot="headline"></mdui-icon>当前位于国际区域<br>点击切换到简体中文区域</div>
+        </mdui-tooltip>
+      </mdui-bottom-app-bar>  
+  </body>
+</html>
