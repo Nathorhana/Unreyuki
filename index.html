@@ -4,73 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
     <meta name="renderer" content="webkit"/>
+    <meta name=”robots” content=”noarchive”>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <link rel="stylesheet" href="servers/css/mdui.css">
     <script src="servers/css/mdui.global.js"></script>
     <title>未觀測2.0</title>
-  </head>
-  <body>
     <div class="mdui-prose">
-
-     
       <div id="home">
-        <br><br><br><h1 align="center">未觀測2.0</h1>
-          <p align="center">Restarting..</p><br>
+        <br><br><br><h1 align="center">未觀測</h1>
+          <p align="center">未觀測正在重启...将在不久的将来再次出发</p><br>
       <br><div class="mdui-col" align="center">  
-        <div class="mdui-container">
-                <div class="mdui-container">
-                    <div class="mdui-card">
-                      <div class="mdui-card-media">
-                      <div class="mdui-card-actions">
-                        <mdui-button icon="comment" href='https://reyuki.com'>Reyuki</mdui-button>
-                        <mdui-button icon="dns" href='https://xuanyo.net/servers/'>社区服务器浏览器Alpha</mdui-button>
-                      </div>
-                  </div>
-                </div>
               </div>
+              <div class="mdui-col" align="center">  
+                <div class="mdui-container">
+                        <div class="mdui-container">
+                            <div class="mdui-card">
+                                  <div style="height: 160px;">
+                                    <mdui-tooltip variant="rich">
+                                    <mdui-button icon="spa" href='https://xuanyo.net/hana/'>进入 花</mdui-button>
+                                    <div slot="headline">来自未觀測新世界的附属站</div>
+                                  </mdui-tooltip>
+                                  <mdui-tooltip variant="rich">
+                                    <mdui-button icon="dns" href='https://xuanyo.net/servers/'>服务器浏览器</mdui-button>
+                                    <div slot="headline">浏览CS/MC的社区服务器，并获取换图通知<br>未完成..功能尚不可用</div>
+                                  </mdui-tooltip>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
 
-      </div>
       <mdui-bottom-app-bar>
         <mdui-tooltip variant="rich">
           <mdui-button-icon icon="home--outlined" variant="tonal"></mdui-button-icon>
-          <div slot="headline">主页</div>
+          <div slot="headline"><h4>未觀測</h4>主页</div>
         </mdui-tooltip>
         <mdui-tooltip variant="rich">
-          <mdui-button-icon icon="dns" href="https://xuanyo.net/servers/"></mdui-button-icon>
-          <div slot="headline">社区服务器浏览器</div>
+          <mdui-button-icon icon="spa--outlined" href="https://xuanyo.net/hana/" ></mdui-button-icon>
+          <div slot="headline"><h4>花</h4>来自未觀測新世界的附属站</div>
         </mdui-tooltip>
         <mdui-tooltip variant="rich">
-          <mdui-button-icon icon="public--outlined" href="https://xuanyo.net/map"></mdui-button-icon>
-          <div slot="headline">地图库</div>
+          <mdui-button-icon icon="dns--outlined" href="https://xuanyo.net/servers/"></mdui-button-icon>
+          <div slot="headline"><h4>服务器浏览器</h4>浏览CS/MC的社区服务器，并获取换图通知</div>
         </mdui-tooltip>
         <mdui-tooltip variant="rich">
-          <mdui-button-icon icon="data_usage--outlined" href="https://cdn.xuanyo.net"></mdui-button-icon>
-          <div slot="headline">CDN</div>
+          <mdui-button-icon icon="archive--outlined"></mdui-button-icon>
+          <div slot="headline"><h4>归档</h4>目前不可用</div>
         </mdui-tooltip>
-        <mdui-tooltip variant="rich">
-          <mdui-button-icon icon="comment--outlined" href="https://reyuki.com"></mdui-button-icon>
-          <div slot="headline">Reyuki</div>
-        </mdui-tooltip>
-        <div style="height: 80px;padding: 0 5px">
-        <mdui-divider vertical></mdui-divider>
-        </div>
-        <mdui-tooltip variant="rich">
-          <mdui-button-icon icon="report--outlined"></mdui-button-icon>
-          <div slot="headline">报告问题</div>
-        </mdui-tooltip>
-        <mdui-tooltip variant="rich">
-          <mdui-button-icon icon="download--outlined"></mdui-button-icon>
-          <div slot="headline">下载客户端</div>
-        </mdui-tooltip>
-        <div style="flex-grow: 0.99"></div>
-        <mdui-chip href="https://beian.miit.gov.cn/" target="_blank">沪ICP备0000000号</mdui-chip>
-        <div style="flex-grow: 0.01"></div>
-        <mdui-tooltip variant="rich">
-          <mdui-fab icon="info"></mdui-fab>
-          <div slot="headline">关于</div>
-        </mdui-tooltip>
+          <mdui-tooltip variant="rich">
+            <mdui-button-icon icon="settings--outlined"></mdui-button-icon>
+            <div slot="headline"><h4>设置</h4>目前不可用</div>
+          </mdui-tooltip>
+          <mdui-tooltip variant="rich">
+          <mdui-button-icon icon="info--outlined"></mdui-button-icon>
+          <div slot="headline"><h4>关于</h4>位置:未觀測-主页<br>构建:I-GL24T03210720P<br>国际区域</div>
+          <div style="flex-grow: 0.99"></div>
+          <mdui-tooltip placement="left" variant="rich">
+          <mdui-button-icon icon="public--outlined" href="https://meteorsnow.cn"></mdui-button-icon>
+          <div slot="headline"></mdui-icon>当前位于国际区域<br>点击切换到简体中文区域</div>
+         </mdui-tooltip>
       </mdui-bottom-app-bar>
     </div>
   </body>
 </html>
+
