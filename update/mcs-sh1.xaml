@@ -14,11 +14,28 @@
 	</StackPanel>
 </local:MyCard>
 
+<local:MyCard Title="Cisco's Fantasy Medieval RPG" Margin="0,0,0,15" CanSwap="True" IsSwaped="true">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,6,0,0"
+                    Text="客户端已经打了汉化，如果没有汉化可自行下载↓" />
+	<local:MyButton Width="200" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="整合包介绍/汉化下载" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1fy421e7Ba" />
+	</StackPanel>
+</local:MyCard>
 
-<local:MyCard Title="更新日志 2024/3/16" Margin="0,0,0,15" CanSwap="True" IsSwaped="true">
+<local:MyCard Title="2024/3/24" Margin="0,0,0,15" CanSwap="True" IsSwaped="true">
 	<StackPanel Margin="25,40,23,15">
 		<local:MyHint Margin="0,8,0,2" IsWarn="False"
-                    Text="客户端无需更新" />
+                    Text="Cisco's Fantasy Medieval RPG" />
+        <TextBlock TextWrapping="Wrap" Margin="0,6,0,0"
+                    Text="开服" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="2024/3/16" Margin="0,0,0,15" CanSwap="True" IsSwaped="true">
+	<StackPanel Margin="25,40,23,15">
+		<local:MyHint Margin="0,8,0,2" IsWarn="False"
+                    Text="脆骨症" />
         <TextBlock TextWrapping="Wrap" Margin="0,6,0,0"
                     Text="开服" />
 	</StackPanel>
