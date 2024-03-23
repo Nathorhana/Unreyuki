@@ -14,7 +14,7 @@
 	</StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="Cisco's Fantasy Medieval RPG" Margin="0,0,0,15" CanSwap="True" IsSwaped="true">
+<local:MyCard Title="Cisco's Fantasy Medieval RPG" Margin="0,0,0,15" CanSwap="True" IsSwaped="false">
 	<StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="0,6,0,0"
                     Text="客户端已经打了汉化，如果没有汉化可自行下载↓" />
