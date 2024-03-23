@@ -16,37 +16,30 @@
 
 <local:MyCard Title="Cisco's Fantasy Medieval RPG" Margin="0,0,0,15" CanSwap="True" IsSwaped="false">
 	<StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="0,6,0,0"
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
                     Text="客户端已经打了汉化，如果没有汉化请在材质包内勾上“Cisco的RPG 汉化BY老本願”即可" />
-	<local:MyButton Width="200" Height="30" HorizontalAlignment="Left" Padding="13,0,13,0"
+<local:MyButton Margin="0,4,0,10" Width="250" Height="35" ColorType="Highlight"
                     Text="整合包介绍/汉化下载" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1fy421e7Ba" />
-	</StackPanel>
+</StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="服务器地址" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="备用服务器地址" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
 	<StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="0,6,0,0"
-                    Text="如果没有服务器地址 自己加即可↓" />
-	<local:MyButton Width="200" Height="30" HorizontalAlignment="Left" Padding="13,0,13,0"
-                    Text="mc.xuanyo.net" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="如果没有服务器地址或者服务器连不上 自己添加备用地址或者直接点击按钮启动即可↓" />
+	<local:MyButton Width="100" Height="30" HorizontalAlignment="Left" Padding="3,5,3,10"
+                    Text="mc.xuanyo.net" ToolTip="点我也能直接加入服务器" EventType="启动游戏" EventData="Cisco's Fantasy Medieval RPG [ Ultimate ]|mc.xuanyo.net" />
+	<local:MyButton Width="175" Height="30" HorizontalAlignment="Left" Padding="3,5,3,10"
+                    Text="备用:mc2.xuanyo.net:18186" ToolTip="点我也能直接加入服务器" EventType="启动游戏" EventData="Cisco's Fantasy Medieval RPG [ Ultimate ]|mc.xuanyo.net" />
 	</StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="2024/3/24" Margin="0,0,0,15" CanSwap="True" IsSwaped="true">
-	<StackPanel Margin="25,40,23,15">
-		<local:MyHint Margin="0,8,0,2" IsWarn="False"
-                    Text="Cisco's Fantasy Medieval RPG" />
-        <TextBlock TextWrapping="Wrap" Margin="0,6,0,0"
-                    Text="开服" />
-	</StackPanel>
-</local:MyCard>
-
-<local:MyCard Title="2024/3/16" Margin="0,0,0,15" CanSwap="True" IsSwaped="true">
+<local:MyCard Title="历史" Margin="0,0,0,15" CanSwap="True" IsSwaped="true">
 	<StackPanel Margin="25,40,23,15">
 		<local:MyHint Margin="0,8,0,2" IsWarn="False"
-                    Text="脆骨症" />
-        <TextBlock TextWrapping="Wrap" Margin="0,6,0,0"
-                    Text="开服" />
+                    Text="2024/3/24 Cisco's Fantasy Medieval RPG开服" />
+		<local:MyHint Margin="0,8,0,2" IsWarn="False"
+                    Text="2024/3/16 脆骨症开服" />
 	</StackPanel>
 </local:MyCard>
 
